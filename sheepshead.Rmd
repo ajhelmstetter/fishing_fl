@@ -1,0 +1,36 @@
+---
+title: "sheepshead"
+pagetitle: "sheepshead"
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+library(ggmap)
+
+#load in map
+load("outputs/fl_map.Rdata")
+
+#read in catch data
+locs<-read.csv("data/fishing_fl - Sheet1.csv")
+
+#reduce to target species only
+locs<-locs[locs$name=="Sheepshead",]
+
+#map with species points
+ggmap(fl_map) + geom_point(data=locs, aes(x=long, y=lat), color="black", fill="grey", size=2, pch=21 ,alpha=0.5)
+
+```
+
+sheepshead: set the hook before they eat it, right as they crush the
+crab
+
+sheepshead: heavy weight (heavier with current), crab, should be just
+off the bottom. set the hook fast. when hooking crab put hook in top
+with only a little coming out bottom so that when the fish crunches the
+crab and sucks in its flesh it will get the hook too!
+
+cleaning video:
+
+```{r, echo=FALSE}
+vembedr::embed_url("https://youtu.be/1Kxqq6MkfQs?t=841")
+```
+

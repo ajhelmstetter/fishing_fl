@@ -1,0 +1,29 @@
+---
+title: "redfish"
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+library(ggmap)
+
+#load in map
+load("outputs/fl_map.Rdata")
+
+#read in catch data
+locs<-read.csv("data/fishing_fl - Sheet1.csv")
+
+#reduce to target species only
+locs<-locs[locs$name=="Redfish",]
+
+#map with species points
+ggmap(fl_map) + geom_point(data=locs, aes(x=long, y=lat), color="black", fill="red", size=2, pch=21 ,alpha=0.5)
+
+```
+
+
+
+with redfish, especially in clear water/schoolfish, they have to find it. so invisible line, slow retrieve, finesse, small bait
+
+redfish & trout: topwater dancing plugs (mirrolure surface walker), dont stop reeling when they go for it
+
+redfish: 2 & 3/4 inch shrimp
+

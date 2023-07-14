@@ -1,0 +1,32 @@
+---
+title: "snook"
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+library(ggmap)
+
+#load in map
+load("outputs/fl_map.Rdata")
+
+#read in catch data
+locs<-read.csv("data/fishing_fl - Sheet1.csv")
+
+#reduce to target species only
+locs<-locs[locs$name=="Snook",]
+
+#map with species points
+ggmap(fl_map) + geom_point(data=locs, aes(x=long, y=lat), color="black", fill="blue", size=2, pch=21 ,alpha=0.5)
+
+```
+
+snook: doashrimp take out hook, add jighead, bounce on bottomm
+
+Snook will hug the bottom during the day e.g. around a bridge so use baits that go to the bottom
+
+snook on the beaches best lure mirrordene green back white sides, orange chin or regular terroreyes
+
+snook: mirrordine white with black stripe "scaled sardine" if targetting
+
+snook 40lb leader because of abrasion resistence.
+
+In FL you want to pop a DOA shrimp in front of the snook.

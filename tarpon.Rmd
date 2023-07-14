@@ -1,0 +1,16 @@
+---
+title: "tarpon"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+crab on the beaches during the outgoing tide for tarpon
+
+tarpon: 2 3/4" shrimp clear holographic
+
+40lb leader for tarpon
+
+baitbuster for tarpon
+

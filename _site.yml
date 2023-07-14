@@ -1,0 +1,60 @@
+name: "fishing_fl"
+output_dir: "website"
+navbar:
+  title: "Florida fishing guide"
+  left:
+    - text: "tackle"
+      href: tackle.html
+      menu:
+        - text: "lures"
+          href: lures.html
+        - text: "rods"
+          href: rods.html
+        - text: "reels"
+          href: reels.html
+    - text: "technique"
+      menu:
+        - text: "positioning"
+          href: positioning.html
+        - text: "casting"
+          href: casting.html 
+        - text: "retrieval"
+          href: retrieval.html   
+        - text: "seasons"
+          href: seasons.html
+        - text: "docks and canals"
+          href: docks_and_canals.html
+        - text: "finding_fish"
+          href: finding_fish.html
+    - text: "species"
+      href: species.html
+      menu:
+        - text: "black drum"
+          href: black_drum.html
+        - text: "jack crevalle"
+          href: jack_crevalle.html 
+        - text: "mangrove snapper"
+          href: mangrove_snapper.html   
+        - text: "redfish"
+          href: redfish.html
+        - text: "seatrout"
+          href: seatrout.html
+        - text: "sheepshead"
+          href: sheepshead.html
+        - text: "snook"
+          href: snook.html
+        - text: "tarpon"
+          href: tarpon.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:andrew.j.helmstetter@gmail.com
+    - icon: fab fa-twitter fa-lg
+      href: https://twitter.com/ajhelmstetter
+    - icon: fab fa-github fa-lg
+      href: http://github.com/ajhelmstetter
+    - icon: fab fa-instagram fa-lg
+      href: https://www.instagram.com/unchatquipeche
+output:
+  html_document:
+    theme: paper
+    css: 'style.css'

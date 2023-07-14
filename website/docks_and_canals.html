@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Docks and canals</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Florida fishing guide</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    tackle
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="lures.html">lures</a>
+    </li>
+    <li>
+      <a href="rods.html">rods</a>
+    </li>
+    <li>
+      <a href="reels.html">reels</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    technique
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="positioning.html">positioning</a>
+    </li>
+    <li>
+      <a href="casting.html">casting</a>
+    </li>
+    <li>
+      <a href="retrieval.html">retrieval</a>
+    </li>
+    <li>
+      <a href="seasons.html">seasons</a>
+    </li>
+    <li>
+      <a href="docks_and_canals.html">docks and canals</a>
+    </li>
+    <li>
+      <a href="finding_fish.html">finding_fish</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    species
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="black_drum.html">black drum</a>
+    </li>
+    <li>
+      <a href="jack_crevalle.html">jack crevalle</a>
+    </li>
+    <li>
+      <a href="mangrove_snapper.html">mangrove snapper</a>
+    </li>
+    <li>
+      <a href="redfish.html">redfish</a>
+    </li>
+    <li>
+      <a href="seatrout.html">seatrout</a>
+    </li>
+    <li>
+      <a href="sheepshead.html">sheepshead</a>
+    </li>
+    <li>
+      <a href="snook.html">snook</a>
+    </li>
+    <li>
+      <a href="tarpon.html">tarpon</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:andrew.j.helmstetter@gmail.com">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/ajhelmstetter">
+    <span class="fab fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/ajhelmstetter">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.instagram.com/unchatquipeche">
+    <span class="fab fa-instagram fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Docks and canals</h1>
+
+</div>
+
+
+<div id="canal-fishing" class="section level2">
+<h2><a
+href="https://www.saltstrong.com/canalfishingmastery/introduction/welcome/">Canal
+fishing</a></h2>
+<p>Ideal for fishing in the wind and bad weather</p>
+<div id="locating-fish" class="section level3">
+<h3>Locating fish</h3>
+<ul>
+<li>Narrower than 30m</li>
+<li>Semi isolated, but not dead-end</li>
+<li>6-10ft deep with a steep drop off</li>
+<li>Focus on structure that sticks out into the canals</li>
+<li>Canals with some, but not a lot of current are best</li>
+<li>Canals that are dead end but have a little outlet can be great</li>
+<li>Short docks that don’t stick far into canal are the best</li>
+<li>Mangroves and docks are a great combination</li>
+<li>Docks with lots of barnacle growth, falling apart, submerged
+structure are good</li>
+<li>look for something different e.g. area with a lot of concrete then
+mangrove bush</li>
+</ul>
+</div>
+<div id="gear" class="section level3">
+<h3>Gear</h3>
+<ul>
+<li>Live bait
+<ul>
+<li>1/4oz split shot + 2ft 20lb leader + Number 2 hook (gamaktsu octopus
+hook)</li>
+<li>rig by pinching tail off and putting hook through where tail
+was</li>
+</ul></li>
+</ul>
+</div>
+<div id="technique" class="section level3">
+<h3>technique</h3>
+<ul>
+<li>Cast directly towards, rather than along, the shortline - will
+reduce snags / allow you to pull fish out</li>
+<li>Bait needs to be on the bottom near edge, don’t tighten line before
+its on the bottom
+<ul>
+<li>Keep rod tip high and feed line out before flipping bail</li>
+<li>Don’t drag away from structure</li>
+</ul></li>
+<li>Put bait under dock, and give it 1 minute then jiggle</li>
+<li>12x casts to each dock</li>
+</ul>
+</div>
+<div id="bridge-fishing" class="section level3">
+<h3>Bridge fishing</h3>
+<ul>
+<li>golden brim terroreyez (texas croaker with yellow jighead (small
+weight head)), bounce the bottom around a bridge (when cold fish are
+deeper)</li>
+</ul>
+</div>
+</div>
+<div id="fishing-docks" class="section level2">
+<h2>Fishing docks</h2>
+<p><a
+href="https://www.saltstrong.com/fishing-tip/docks-fishing-mini-course/">Dock
+fishing mastery course by Saltstrong</a></p>
+<p>Fishing docks with 30lb test because of pilings etc</p>
+<div id="positioning" class="section level3">
+<h3>Positioning</h3>
+<ul>
+<li>Downcurrent of targeted dock, perpendicular</li>
+</ul>
+</div>
+<div id="casting" class="section level3">
+<h3>Casting</h3>
+<ul>
+<li>Cast at an angle (30-45 degrees) beyond dock and let lure sink to
+bottom</li>
+<li>Let current take it towards first piling (relative to current) while
+bouncing lure</li>
+<li>Then move to other pilings using skip cast approach</li>
+<li>Fish hang around pilings so be within 1-2ft from pilings to maximize
+bites</li>
+<li>When you catch one, there’ likely more</li>
+<li>Weedless allows you to skip further under dock</li>
+</ul>
+</div>
+<div id="tackle" class="section level3">
+<h3>Tackle</h3>
+<ul>
+<li>20lb braid</li>
+<li>Medium heavy rod</li>
+<li>3000 reel</li>
+<li>Mono 30-40lb better for abrasion</li>
+<li>baitfish and crustacean imitation lures at two different sizes</li>
+<li><a
+href="https://fishstrong.com/products/power-prawn-usa-original?variant=42285567017134">powerprawn</a>
+preferred by Luke @ Saltstrong</li>
+<li>Increase weight with depth (1/4oz 4-6ft, 1/2oz 6-10ft)</li>
+<li>If a lot of structure go with weedless weighted hooks</li>
+<li>Exposed hook jighead if not a lot of structure</li>
+<li>But there are weedless zman jigheads (worse hookup ratio)</li>
+</ul>
+</div>
+<div id="fishing-inshore-structure-course-by-saltstrong"
+class="section level3">
+<h3><a
+href="https://www.saltstrong.com/fishing-tip/fishing-inshore-structure-mini-course/">Fishing
+inshore structure course by Saltstrong</a></h3>
+<ul>
+<li>Strike zone is 1-2ft around structure</li>
+<li>Most fish will be towards the bottom</li>
+<li>Keep bail open as bait lands to allow bait to fall straight down and
+stay close to structure</li>
+<li>Feed line out with hand to make it drop faster</li>
+<li>Cast beyond structure</li>
+<li>If current is strong keep rod tip up so line is out water and no
+‘belly’ is created</li>
+</ul>
+</div>
+<div id="mangroves" class="section level3">
+<h3>Mangroves</h3>
+<ul>
+<li>Keep line loose after cast so it stays in place</li>
+<li>Don’t reel too much initially (1 turn of reel =~ 1m of line)</li>
+<li>Cast upcurrent of mangrove points, deep into the shoreline</li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

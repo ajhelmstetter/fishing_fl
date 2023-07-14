@@ -1,0 +1,5 @@
+df<-read.csv("~/Desktop/fl_fishing/fishing_data.csv")
+sort(table(df$Common.Name))
+sort(table(df$Weather))
+sort(table(df$Location))
+sort(table(df$Method))

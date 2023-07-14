@@ -1,0 +1,19 @@
+---
+title: "Mangrove snapper"
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+library(ggmap)
+
+#load in map
+load("outputs/fl_map.Rdata")
+
+#read in catch data
+locs<-read.csv("data/fishing_fl - Sheet1.csv")
+
+#reduce to target species only
+locs<-locs[locs$name=="Mangrove snapper",]
+
+#map with species points
+ggmap(fl_map) + geom_point(data=locs, aes(x=long, y=lat), color="black", fill="pink", size=2, pch=21 ,alpha=0.5)
+```
