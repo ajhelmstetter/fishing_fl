@@ -1,5 +1,5 @@
 name: "fishing_fl"
-output_dir: "website"
+output_dir: "docs"
 navbar:
   title: "Florida fishing guide"
   left:
